@@ -23,22 +23,3 @@ const galleryItemMarkup = images
   .join('');
 
 galleryEl.insertAdjacentHTML('beforeend', galleryItemMarkup);
-
-// * 2й варіант
-
-// const makeGalleryCard = ({ url, alt }) => {
-//   const galleryItemEl = document.createElement('li');
-//   galleryItemEl.classList.add('gallery__item');
-
-//   const galleryImg = document.createElement('img');
-//   galleryImg.classList.add('gallery__img');
-//   galleryImg.src = url;
-//   galleryImg.alt = alt;
-
-//   galleryItemEl.append(galleryImg);
-//   galleryEl.append(galleryItemEl);
-
-//   return galleryItemEl;
-// };
-
-// const makeGalleryEl = images.map(makeGalleryCard);
